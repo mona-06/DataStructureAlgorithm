@@ -20,6 +20,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mona-06/DataStructureAlgorithm.git",
+    "accountId": "ef8ad210-5dd5-4307-aa23-18a547ba6137"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/DSATraning/src/com/DAY12/CW/SinglyLinkedList/SinglyLinkedList.java" root0="SKIP_INSPECTION" />
   </component>
@@ -99,7 +105,7 @@
       <workItem from="1763478564282" duration="5690000" />
       <workItem from="1763488246036" duration="465000" />
       <workItem from="1763488753039" duration="186000" />
-      <workItem from="1763489044829" duration="355000" />
+      <workItem from="1763489044829" duration="668000" />
     </task>
     <servers />
   </component>
