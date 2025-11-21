@@ -15,4 +15,4 @@ INFO = 45
 WARN = 7
 ...
 Time: 123 ms
-🖇️ ContributionsContributions are highly welcome! Feel free to fork the repository and submit a pull request for any of the following ideas:Add more sophisticated analysis features (e.g., word frequency charts, top-N reporting).Improve performance for single, extremely large log files (e.g., memory mapping).Implement custom word filtering or exclusion options.Enhance exception handling for file reading.
+
