@@ -1,0 +1,18 @@
+📄 LogAnalyzerLogAnalyzer is a high-performance, multi-threaded Java utility designed to efficiently read log files, count the occurrences of every word, and output the results in alphabetical order. It leverages Java's concurrency features to minimize processing time for large log datasets.📝 FeaturesConcurrent Processing: Uses a fixed thread pool to process multiple files in parallel for fast analysis.Thread-Safe Counting: Utilizes ConcurrentHashMap for safe and efficient word aggregation across threads.Flexible Input: Reads all .txt or log files from the specified ./logs input folder.Output: Generates word frequency counts, sorted alphabetically, to the console and a separate result.txt file.Benchmarking: Measures and reports the total execution time of the entire analysis in milliseconds.⚙️ RequirementsJava 8 or higher (Developed using JDK 21).A folder named logs placed in the project root, containing the text/log files to be analyzed.🛠️ How to Run1. Cloning the RepositoryBashgit clone https://github.com/yourusername/LogAnalyzer.git
+cd LogAnalyzer
+2. Prepare Log FilesEnsure you have a folder named logs in the project's root directory (LogAnalyzer/). Place all your log or text files inside this folder.3. Compile and Execute (Command Line)To handle the package structure correctly, use the following commands from the project root directory (LogAnalyzer/):Compile: The -d bin option creates an output directory for the compiled classes.Bashjavac -d bin src/com/MiniProject2/LogAnalyzer.java
+Run: The -cp bin option tells the JVM where to find the compiled com.MiniProject2.LogAnalyzer class.Bashjava -cp bin com.MiniProject2.LogAnalyzer
+4. Check ResultsThe program will print the analysis summary to the console, and a detailed output file will be generated:Console outputresult.txt file in the project root directory.📂 Folder StructureLogAnalyzer/
+├── src/
+│   └── com/MiniProject2/
+│       └── LogAnalyzer.java
+├── logs/           # INPUT: Place your log files here
+├── bin/            # OUTPUT: Compiled class files are placed here
+├── result.txt      # OUTPUT: Generated word frequency report
+└── README.md
+⏱️ PerformanceThe program utilizes a fixed 4-thread pool (ExecutorService) and the ConcurrentHashMap data structure to ensure thread-safe, fast word counting. This parallel approach provides significant performance improvements for analyzing multiple, large log files.MetricDetailConcurrency4 threadsSafetyConcurrentHashMapReportExecution time is reported in milliseconds.⚡ Example OutputThe output is sorted alphabetically by word:ShellERROR = 15
+INFO = 45
+WARN = 7
+...
+Time: 123 ms
+🖇️ ContributionsContributions are highly welcome! Feel free to fork the repository and submit a pull request for any of the following ideas:Add more sophisticated analysis features (e.g., word frequency charts, top-N reporting).Improve performance for single, extremely large log files (e.g., memory mapping).Implement custom word filtering or exclusion options.Enhance exception handling for file reading.
